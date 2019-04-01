@@ -6,7 +6,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-<img src={theMachinist} />
+<img src={theMachinist} alt="The Machist cover"/>
+
       </div>
     );
   }
