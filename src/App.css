@@ -1,10 +1,22 @@
 
-.Container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  flex-flow: row;
-  margin: 30px;
-  justify-content: space-around;
+.App {
+  text-align: center;
 }
+
+.container {
+  display: flex;
+  justify-content: space-around
+}
+
+.item{
+  flex: 1;
+  margin: auto;
+  flex-basis: 100%
+}
+
+.item img{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
