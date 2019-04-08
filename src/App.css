@@ -1,17 +1,15 @@
 
 .App {
   text-align: center;
+  background-color: black
 }
 
 .container {
   display: flex;
-  justify-content: space-around
 }
 
 .item{
   flex: 1;
-  margin: auto;
-  flex-basis: 100%
 }
 
 .item img{
@@ -20,3 +18,8 @@
   display: block;
 }
 
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
