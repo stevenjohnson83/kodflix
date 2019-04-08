@@ -1,7 +1,6 @@
-
 .App {
   text-align: center;
-  background-color: black
+  /* background-color: black */
 }
 
 .container {
@@ -10,12 +9,27 @@
 
 .item{
   flex: 1;
+  position: relative;
+}
+
+.overlay {
+  display: none; 
+  position: absolute;
+  width: 100%;
+  background-color: rgb(125,125,125);
+  opacity: .8;
 }
 
 .item img{
   height: 100%;
   width: 100%;
   display: block;
+}
+
+.item:hover .overlay{
+  display: block;
+  position: absolute;
+  bottom: 0;
 }
 
 @media only screen and (max-width: 600px) {
