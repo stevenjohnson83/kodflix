@@ -7,29 +7,31 @@
   display: flex;
 }
 
-.item{
-  flex: 1;
-  position: relative;
-}
-
-.overlay {
-  display: none; 
-  position: absolute;
-  width: 100%;
-  background-color: rgb(125,125,125);
-  opacity: .8;
-}
-
 .item img{
   height: 100%;
   width: 100%;
-  display: block;
+  display: block; 
+}
+
+.item{
+  flex: 1;
+  position: relative; 
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  transition: opacity cubic-bezier(0.68, 0.49, 0.56, 1.34) 300ms;
+  left: 0;
+  width: 100%;
+  background-color: rgb(125,125,125);
+  opacity: .0;
 }
 
 .item:hover .overlay{
-  display: block;
-  position: absolute;
   bottom: 0;
+  opacity: .8;
+ 
 }
 
 @media only screen and (max-width: 600px) {
