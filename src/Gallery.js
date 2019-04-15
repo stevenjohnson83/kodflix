@@ -11,18 +11,20 @@ import pf from './images/PF.jpg';
 
 export default function Gallery() {
     return (
-      <div>
-        <div className='container'>
-          <Stack name='Shawshank redemption' img={ssr} />
-          <Stack name='The Godfather' img={tgf} />
-          <Stack name='The Dark Knight' img={tdk} />
+
+        <div>
+            <div className='container'>
+                <Stack name='Shawshank redemption' img={ssr} />
+                <Stack name='The Godfather' img={tgf} />
+                <Stack name='The Dark Knight' img={tdk} />
+            </div>
+            <div className='container'>
+                <Stack name='The Godfather Pt 2' img={tgf2} />
+                <Stack name='Return Of The King' img={rotk} />
+                <Stack name='Pulp Fiction' img={pf} />
+            </div>
         </div>
-        <div className='container'>
-          <Stack name='The Godfather Pt 2' img={tgf2} />
-          <Stack name='Return Of The King' img={rotk} />
-          <Stack name='Pulp Fiction' img={pf} />
-        </div>
-      </div>
+
     )
-  
-  }
+
+}
