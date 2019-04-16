@@ -3,7 +3,10 @@
   /* background-color: black */
 }
 .container {
-  display: flex;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 .item img{
   height: 100%;
@@ -12,21 +15,23 @@
 }
 
 .item{
-  flex: 1;
+  /* flex: 1;
+  flex-basis: 120px; */
+  /* padding: 30px; */
   position: relative; 
+  border: 1px solid blue;
   overflow: hidden;
+  
 }
 
 .overlay {
   position: absolute;
-  /*transition: opacity cubic-bezier(0.68, 0.49, 0.56, 1.34) 300ms;*/
   transition: all 0.7s ease; /*why transition all? Position absolute?*/
+  bottom: -100px; /* refernce px else it wont work*/
   left: 0;
   width: 100%;
+  opacity: .6;
   background-color: rgb(125,125,125);
-  opacity: 1;
-  bottom: -100px; /* refernce px else it wont work*/
-
 }
 
 h1 {
@@ -34,14 +39,8 @@ h1 {
 }
 
 .item:hover .overlay{
-  
   opacity: .8;
   bottom: 0px; /* refernce px else it wont work*/
  
 }
 
-@media only screen and (max-width: 600px) {
-  .container {
-    flex-direction: column;
-  }
-}

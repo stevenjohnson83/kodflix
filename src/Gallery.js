@@ -17,8 +17,6 @@ export default function Gallery() {
                 <Stack id='shawshank' name='Shawshank redemption' img={ssr} />
                 <Stack id='godfather' name='The Godfather' img={tgf} />
                 <Stack id='darkknight' name='The Dark Knight' img={tdk} />
-            </div>
-            <div className='container'>
                 <Stack id='godfather2' name='The Godfather Pt 2' img={tgf2} />
                 <Stack id='returnoftheking' name='Return Of The King' img={rotk} />
                 <Stack id='pulpfiction' name='Pulp Fiction' img={pf} />
