@@ -8,7 +8,7 @@ import pf from './images/PF.jpg';
 
 export default function getGallery() {
     return [
-        { id: 'shawshank', name: 'Shawshank redemption', img: ssr },
+        { id: 'shawshank', name: 'Shawshank Redemption', img: ssr },
         { id: 'godfather', name: 'The Godfather', img: tgf },
         { id: 'darkknight', name: 'The Dark Knight', img: tdk },
         { id: 'godfather2', name: 'The Godfather Pt 2', img: tgf2 },
