@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Gallery from './Gallery.js'
-import Details from './Details.js'
+import Details from './details/Details.js'
 import notFound from './notFound.js'
 
 class App extends Component {

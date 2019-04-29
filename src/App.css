@@ -1,46 +1,42 @@
-.App {
-  text-align: center;
-  /* background-color: black */
-}
+body{
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+  } 
+
+img {max-width:100%;}
+
 .container {
-  /* display: flex;
-  flex-wrap: wrap; */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-.item img{
-  height: 100%;
-  width: 100%;
-  display: block; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.item{
-  /* flex: 1;
-  flex-basis: 120px; */
-  /* padding: 30px; */
+.item {
+  padding: 5px;
   position: relative; 
-  border: 1px solid blue;
+  /* sets border colour */
+  border: 15px solid black;
   overflow: hidden;
-  
-}
-
-.overlay {
-  position: absolute;
-  transition: all 0.7s ease; /*why transition all? Position absolute?*/
-  bottom: -100px; /* refernce px else it wont work*/
-  left: 0;
-  width: 100%;
-  opacity: .6;
-  background-color: rgb(125,125,125);
-}
-
-h1 {
-  margin: 0; /*clips at zero?*/
-}
-
-.item:hover .overlay{
-  opacity: .8;
-  bottom: 0px; /* refernce px else it wont work*/
  
 }
 
+
+.overlay {
+   transition: bottom 0.5s ease;
+    bottom: -100%;
+    position: absolute;
+    opacity: .8;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+.item:hover .overlay {
+  bottom: 0;
+  opacity: 0.8;
+  display: block;
+}
